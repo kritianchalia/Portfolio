@@ -1,0 +1,32 @@
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    /* 25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    75%{
+        rotate: 270deg;
+    } */
+    100%{
+        rotate: 360deg;
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-top: 5px solid black;
+    animation: spin 2s ease-in-out 0s infinite normal;
+}
